@@ -20,12 +20,16 @@ python3 src/ui-ux-pro-max/scripts/search.py "<query>" --domain <domain> [-n <max
 - `landing` - Page structure and CTA strategies
 - `chart` - Chart types and library recommendations
 - `ux` - Best practices and anti-patterns
+- `icons` - Icon set recommendations
+- `react` - React performance patterns
+- `web` - App/web interface guidelines
+- `google-fonts` - Google Fonts catalog
 
 **Stack search:**
 ```bash
 python3 src/ui-ux-pro-max/scripts/search.py "<query>" --stack <stack>
 ```
-Available stacks: `html-tailwind` (default), `react`, `nextjs`, `astro`, `vue`, `nuxtjs`, `nuxt-ui`, `svelte`, `swiftui`, `react-native`, `flutter`, `shadcn`, `jetpack-compose`
+Available stacks: `html-tailwind` (default), `react`, `nextjs`, `astro`, `vue`, `nuxtjs`, `nuxt-ui`, `svelte`, `swiftui`, `react-native`, `flutter`, `shadcn`, `jetpack-compose`, `angular`, `laravel`, `threejs`
 
 ## Architecture
 
@@ -52,6 +56,8 @@ cli/                              # CLI installer (uipro-cli on npm)
     └── templates/                # Copy of src/ui-ux-pro-max/templates/
 
 .claude/skills/ui-ux-pro-max/     # Claude Code skill (symlinks to src/)
+.claude/skills/*                  # Companion skills (banner-design, brand, design,
+                                  #   design-system, slides, ui-styling)
 .factory/skills/ui-ux-pro-max/   # Droid (Factory) skill (symlinks to src/)
 .shared/ui-ux-pro-max/            # Symlink to src/ui-ux-pro-max/
 .claude-plugin/                   # Claude Marketplace publishing
